@@ -1,10 +1,10 @@
 import { ServerName } from '../types/server';
 
 export const BASE_URL: Record<ServerName, string | undefined> = {
+  Mock: '',
   누누: process.env.REACT_APP_NUNU_SERVER_URL,
   체인저: process.env.REACT_APP_CHANGER_SERVER_URL,
   필립: process.env.REACT_APP_PHILIP_SERVER_URL,
-  Mock: '',
 };
 
 export const DEFAULT_SERVER_NAME = Object.keys(BASE_URL)[0] as ServerName;
